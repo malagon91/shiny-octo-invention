@@ -19,8 +19,8 @@ app.use(morgan('dev'));
 app.disable('etag');
 
 app.get('*', (req, res) => {
-    console.log(req.url);
-    res.render('index', { });
+	console.log(req.url);
+	res.render('index', {});
 });
 
 const PORT = process.env.PORT || 5000;
